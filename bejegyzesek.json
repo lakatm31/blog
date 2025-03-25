@@ -1,0 +1,44 @@
+[
+    {
+        "author": "Béla",
+        "date": "2025-03-19",
+        "content": "Kipróbáltam a GitHub Copilotot Django-ban – meglepően jól működik! Rengeteget segített.",
+        "color": "#C1FFDD"
+    },
+    {
+        "author": "Csaba",
+        "date": "2025-03-18",
+        "content": "Egy hosszú nap után jó volt csak leülni és gondolatokat írni a naplómba. Néha tényleg kell ez a lelassulás.",
+        "color": "#C1DFFF"
+    },
+    {
+        "author": "Mariann",
+        "date": "2025-03-21",
+        "content": "Ez a nap is eljött! Végre élvezem a djangót :) ",
+        "color": "#62f964"
+    },
+    {
+        "author": "Egon",
+        "date": "2025-03-21",
+        "content": "Csókolom! \r\nSosem naplóztam még. Most bizony kipróbálom. Csaxolok. ",
+        "color": "lightgreen"
+    },
+    {
+        "author": "Alaska",
+        "date": "2025-03-21",
+        "content": "#haboskakó#madárcsicsergés#ittatavasz#boldogság",
+        "color": "#f5ecc2"
+    },
+    {
+        "author": "Teszt Elek",
+        "date": "2025-03-21",
+        "content": "Éppen itt most tesztelek",
+        "color": "#fbff00"
+    },
+    {
+        "author": "Egon",
+        "date": "2025-03-21",
+        "content": "valami fontos történik",
+        "color": "#00bfff"
+    }
+]

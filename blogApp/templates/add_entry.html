@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Entry</title>
+</head>
+<body>
+    <h1>Add a New Blog Entry</h1>
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+        {% csrf_token %}
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required>
+        <br>
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" required></textarea>
+        <br>
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color" value="#FFFFFF">
+        <br>
+        <button type="submit">Add Entry</button>
+    </form>
+    <br>
+    <a href="{% url 'blog_home' %}">Back to Home</a>
+</body>
+</html>
