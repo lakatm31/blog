@@ -51,6 +51,8 @@ def ellenorzes(password):
     return nagybetu and szam        
 
 
+
+
 # Log in view
 def user_login(request):
     if request.method == 'POST':
@@ -76,6 +78,13 @@ def user_signup(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         password = form.data.get("password1")
+        password_confirm = form.data.get("password2")
+
+        if password != password_confirm:
+            return render(request, 'signup.html', {
+                'form': form,
+                'error': 'A jelszavak nem egyeznek.'  # Passwords do not match
+            })
 
         if not ellenorzes(password):
             return render(request, 'signup.html', {

@@ -3,7 +3,8 @@ body {
     padding: 0;
     font-family: system-ui, sans-serif;
     background: url("../images/home.jpg?v=2") no-repeat center center fixed;
-    background-size: ccontain; 
+    background-color: black;
+    background-size: contain; 
     color: #333;
 }
 
