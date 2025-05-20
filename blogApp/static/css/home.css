@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    background: url("../images/home.jpg?v=2") no-repeat center center fixed;
+    background-size: ccontain; 
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+/* Responsive menu */
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #0022ff2f;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.container {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white
+}
+
+.container p {
+    font-size: 1.1rem;
+    color: white;
+}

@@ -1,27 +1,39 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Add Entry</title>
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
 </head>
 <body>
-    <h1>Add a New Blog Entry</h1>
+    <h1>Add a New Blog Entry</h1><br>
+
     {% if error %}
-        <p style="color:red;">{{ error }}</p>
+        <p class="error">{{ error }}</p>
     {% endif %}
-    <form method="POST">
+
+    <form method="POST" class="entry-form">
         {% csrf_token %}
-        <label for="author">Author:</label>
-        <input type="text" id="author" name="author" required>
-        <br>
-        <label for="content">Content:</label>
-        <textarea id="content" name="content" required></textarea>
-        <br>
-        <label for="color">Color:</label>
-        <input type="color" id="color" name="color" value="#FFFFFF">
-        <br>
+
+        <div class="form-group">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required><br>
+        </div>
+
+        <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" required></textarea><br>
+        </div>
+
+        <div class="form-group">
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" value="#FFFFFF"><br>
+        </div>
+
         <button type="submit">Add Entry</button>
     </form>
-    <br>
+
     <a href="{% url 'blog_home' %}">Back to Home</a>
 </body>
 </html>

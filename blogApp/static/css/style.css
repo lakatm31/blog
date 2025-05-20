@@ -1,3 +1,4 @@
+/* Global Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -10,6 +11,7 @@ h1 {
     color: #333;
 }
 
+/* Blog Container Styling */
 .blog-container {
     max-width: 800px;
     margin: 20px auto;
@@ -19,15 +21,20 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Post Styling */
 .post {
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .post:last-child {
     border-bottom: none;
 }
 
+/* Button Styling */
 button {
     padding: 10px 15px;
     background-color: #007bff;
@@ -35,8 +42,66 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* Logout Button Styling */
+.logout-btn {
+    .logout-btn {
+        position: fixed;  /* Fixed position relative to the viewport */
+        top: 20px;        /* Distance from the top of the page */
+        right: 20px;      /* Distance from the right of the page */
+        padding: 12px 20px;  /* Matching padding for consistency */
+        background-color: #007bff;  /* Same background as signup button */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;    /* Ensures the button stays on top of other content */
+        text-align: center;  /* Center the text inside the button */
+        font-size: 1rem;    /* Same font size as other buttons */
+    }
+    
+    .logout-btn:hover {
+        background-color: #0056b3;  /* Same hover color as signup button */
+    }
+}
+
+
+
+
+/* Messages Styling */
+ul.messages {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+ul.messages li {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Password Info Box Styling */
+.password-info {
+    background-color: #f0f8ff;
+    padding: 10px;
+    border: 1px solid #add8e6;
+    border-radius: 5px;
+}
+
+.password-info ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.password-info li {
+    margin-bottom: 5px;
 }
